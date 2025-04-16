@@ -3,7 +3,6 @@ import { getCurrencyFullName } from "@/lib/getCurrencyFullName";
 
 export default async function Home() {
   const { data, error } = await getCurrencyData();
-  console.log(data)
 
   if (error) {
     return (
